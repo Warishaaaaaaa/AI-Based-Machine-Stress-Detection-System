@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Machine Stress Dashboard</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AI-Based Machine Stress Detection System</h1>
+
+    <!-- TOP CARDS -->
+    <div class="cards">
+
+        <div class="card">
+            <h3>Temperature</h3>
+            <h2 id="temp">32°C</h2>
+        </div>
+
+        <div class="card">
+            <h3>Current</h3>
+            <h2 id="current">0.5 A</h2>
+        </div>
+
+        <div class="card">
+            <h3>Vibration</h3>
+            <h2 id="vibration">NO</h2>
+        </div>
+
+        <div class="card">
+            <h3>Stress Status</h3>
+            <h2 id="status">Normal</h2>
+        </div>
+
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="main-grid">
+
+        <!-- SENSOR GRAPH -->
+        <div class="chart-card">
+
+            <h2>Sensor Readings</h2>
+
+            <canvas id="sensorChart"></canvas>
+
+        </div>
+
+        <!-- STRESS METER -->
+        <div class="stress-card">
+
+            <h2>AI Stress Score</h2>
+
+            <div class="circle">
+
+                <div class="inner-circle">
+
+                    <span id="stressScore">18%</span>
+
+                </div>
+
+            </div>
+
+            <div class="status-box" id="statusBox">
+                NORMAL
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
