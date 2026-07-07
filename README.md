@@ -62,7 +62,7 @@ Images/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/AI-Based-Machine-Stress-Detection-System.git
+git clone https://github.com/Warishaaaaaaa/AI-Based-Machine-Stress-Detection-System.git
 ```
 
 ### Install Python packages
